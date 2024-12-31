@@ -1,0 +1,20 @@
+https://en.wikipedia.org/wiki/ModuloYou have completed the exercises of the chapter. As a next step, and before moving on to the next chapter, we suggest you take this quiz. It is not a must, and you may skip it if you prefer, but we recommend that you take this quiz to get a general idea of your knowledge so far.
+
+1. What is the value range of a 16 bit unsigned integer?
+[] 0 to 255
+[*] 0 to 65,535
+[] -32,768 to 32,767
+[] 1 to 65,536
+
+2. Given the following function declaration, which answer is correct?
+short medium(long number);
+[] medium is a type, long is the parameter's name
+[*] short is the function's return type, number is the parameter's name
+[] long is the parameter's type, number is the parameter's value
+[] short is the function's name, number is the parameter's type
+
+3. C data types are classified based on their value range (the minimum and maximum values a variable can have). Given this aspect, what is the correct order, from shortest to longest?
+[*] char, short, int, long
+[ ] int, long, short, char
+[ ] long, char, int, short
+[ ] char, short, long, int

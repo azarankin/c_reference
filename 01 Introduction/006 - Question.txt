@@ -1,0 +1,31 @@
+You have completed the exercises of the chapter. As a next step, and before moving on to the next chapter, we suggest you take this quiz. It is not a must, and you may skip it if you prefer, but we recommend that you take this quiz to get a general idea of your knowledge so far.
+
+
+1. A digital thermostat is set to activate an air conditioner when the room temperature is 24 degrees or higher. Which comparison operator should be used?
+int room_temp = ReadRoomTemperature();
+if (room_temp ❓ 24) {
+    ActivateTheAirConditioner();
+}
+[] !=
+[*] >=
+[] >
+[] ==
+
+2. What is the correct meaning of the '!' symbol?
+[] It is used to mark the end of a statement
+[*] It's the logical NOT operator
+[] It's a boolean expression
+[] It's a comparison operator
+
+3. What is the value of variable x after the execution of the following code snippet?
+int x = -7;
+if (x) {
+    x += 8;
+} else {
+    x = 3;
+}
+
+[] Unpredictable
+[] -1
+[] 3
+[*] 1

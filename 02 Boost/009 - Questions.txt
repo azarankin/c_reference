@@ -1,0 +1,27 @@
+You have completed the exercises of the chapter. As a next step, and before moving on to the next chapter, we suggest you take this quiz. It is not a must, and you may skip it if you prefer, but we recommend that you take this quiz to get a general idea of your knowledge so far.
+
+1. Which of the following statements about the 'for' statement is correct?
+[] The body of the loop is executed at least once
+[] The step expression is executed before every iteration
+[] The break statement terminates the program
+[*] The initialization expression is executed once, before the first iteration
+
+2. What are the values of the variables 'index' and 'count' after the execution of the following code snippet?
+int index = 3, count = 10;
+for (index=0; index < 10; ++index) {
+    count += 2;
+}
+[] The value of index is unpredictable, and count will equal 30
+[*] index will equal 10, and count will equal 30
+[] index will equal 10, and count will equal 20
+[] index will equal 9, and count will equal 18
+
+3. What is the value of the variable 'count' after the execution of the following code snippet?
+int count = 0;
+while (count != 10) {
+    count += 3;
+}
+[] 12
+[] Integer overflow
+[*] It's (allegedly) an infinite loop
+[] 9
