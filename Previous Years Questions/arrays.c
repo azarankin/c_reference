@@ -1,0 +1,140 @@
+ #include <stdio.h>
+
+ //	Array swop, begin to end [1, 2, 3] to [3, 2, 1]
+void arrSwop(int arr[], int arrLength){
+    for (int i=0; i<=((arrLength-1)/2); i++){
+        int tmp=arr[i];
+        arr[i]=arr[arrLength-i-1];
+        arr[arrLength-i-1]=tmp;
+    }
+}
+
+//	The biggest value in the array
+// Condition, at least 2 elements inside the array!
+int biggest(int arr[], int arrLength){
+    int b=arr[0];   //biggest
+    for (int i=1;i<arrLength;i++)
+        if (b<arr[i]) b=arr[i];
+    return b;
+}
+
+
+//	The biggest 3rd element
+int biggest3(int arr[], int arrLength){
+    int minInt= -powX(2, (sizeof(int)*8-1) )+1; //-2147483647
+    int b1, b2, b3;
+    b1=b2=b3=minInt;
+    for (int i=0; i< arrLength; i++){
+        //if(arr[i]<b3) continue;
+        if(arr[i]<=b2 && arr[i]>b3) b3=arr[i];
+        else if(arr[i]<=b1 && arr[i]>b2) {b3=b2; b2=arr[i];}
+        else if(arr[i]>=b1) {b3=b2; b2=b1; b1=arr[i];}
+        }
+    return b3;
+}
+
+
+
+// Turn array values 1 place left
+void turnLeft(int arr[], int arrLength){
+    int repaired=arr[arrLength-1];  //last
+    arr[arrLength-1]=arr[0];    //Last=First
+
+    for(int i=(arrLength-2); i>=0; i--){
+        int tmp=arr[i];
+        arr[i]=repaired;
+        repaired=tmp;
+        }
+}
+
+
+// Turn array values 3 places left
+void turnLeft3(int arr[], int arrLength){
+        for(int i=1;i<=3; i++)
+            turnLeft(arr, arrLength);
+}
+
+
+void turnLeft3_2(int arr[], int arrLength) {
+    // Store the first 3 elements
+    int tmp1 = arr[0];
+    int tmp2 = arr[1];
+    int tmp3 = arr[2];
+
+    // Shift everything left by 3
+    for (int i = 0; i < arrLength - 3; i++) {
+        arr[i] = arr[i + 3];
+    }
+
+    // Put the saved elements at the end
+    arr[arrLength - 3] = tmp1;
+    arr[arrLength - 2] = tmp2;
+    arr[arrLength - 1] = tmp3;
+}
+
+
+
+//	Remove place from the array
+void deleteArr(int arr[], int arrLength, int deletePlace){\
+    
+    for (int i=deletePlace; i<(arrLength-1); i++)
+        arr[i]=arr[i+1];
+    arr[arrLength-1]=-1;
+}
+
+
+
+//	Merge 2 arrays
+void mergeArray(int merge[], int arr1[], int length1, int arr2[], int length2){
+    for(int i=0; i<length1; i++)
+        merge[i]=arr1[i];
+    for(int i=0; i<length2; i++)
+        merge[length1+i]=arr2[i]; // continue merge array after [length1-1]
+}
+
+
+
+//	Merge 2 arrays with sorting
+    // The 2 arrays is sorted
+void mergeArraySort(int merge[], int arr1[], int length1, int arr2[], int length2){
+    int i, j, m; //array1, array2, merged array counters
+    i=j=m=0;
+    while (i<length1){
+        if(arr1[i]==arr2[j]){
+            merge[m++] = arr2[j++];
+            merge[m++] = arr1[i++];
+        }else if (arr1[i]<arr2[j]){
+            merge[m++] = arr1[i++];
+        }else{
+            while(arr1[i]>arr2[j])
+                merge[m++] = arr2[j++];
+            merge[m++] = arr1[i++];
+        }
+    }
+    //the remain arr2 elements move to merge array
+    while(j<length2)
+        merge[m++]=arr2[j++];
+}
+
+
+
+
+//	Sort arrays
+void bubleSortArray(int arr[], int arrLength){
+    for(int i=0; i<arrLength; i++ )
+        for(int j=i+1; j<arrLength; j++ )
+            if(arr[i]>arr[j]){//swop values inside array for buble sort
+                int tmp=arr[i];
+                arr[i]=arr[j];
+                arr[j]=tmp;
+            }
+}
+
+
+
+// Print array
+void printArr(int arr[], int arrLength){
+        for(int i=0; i<arrLength; i++){
+            printf("%i ", arr[i]);
+        }
+}
