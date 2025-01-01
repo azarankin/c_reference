@@ -56,7 +56,7 @@ Error Handling
     {
          Handle the error: print something, return NULL, etc. 
     }
-    
+
 Another common error is when the program doesn't release buffers that are no longer in use. In such a case the memory management subsystem will not be able to supply memory blocks for allocation requests. This is called memory leak.
 Unlike static memory allocation, which fixes memory sizes during compile time, dynamic allocation enables resizing data structures like arrays at runtime.
 */
@@ -68,7 +68,6 @@ Unlike static memory allocation, which fixes memory sizes during compile time, d
 
 /*
 Exercise 1: StringDuplicate
-
 Requirements:
 Read the man page strdup (https://man7.org/linux/man-pages/man3/strdup.3.html).
 Find and understand the problem in the provided implementation.
@@ -166,14 +165,9 @@ contact_type* CreateContact(const char* name, unsigned tel_num)
 
 
 
-
-
 /*
 Exercise 3: DestroyContact
-
 To finish this exercise, implement the opposite function of releasing a Contact object. Remember to see the function declaration under the API tab.
-
-
 Requirements:
 Free the memory allocated for a contact object, pointed to by the given pointer.
 */
