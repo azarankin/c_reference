@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "assert.h": "c",
-        "stdlib.h": "c",
-        "stddef.h": "c"
-    }
-}
