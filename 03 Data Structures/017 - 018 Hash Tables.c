@@ -158,26 +158,5 @@ const hash_data_type* HashFind(const hash_type* hash, const char* key) {
 
 
 
-/*
-Exercise 18: HashInsert-OA
-
-Insert a new element to the Hash based on a given key.
-
-Please note:
-
-The HashConstruct function is already implemented for you, and the Hash is initialized.
-This Hash should be implemented using the Open Addressing option.
-The hash table contains size entries of initialized hash data objects.
-An empty hash data entry is identified when the key value is an empty string.
-
-Requirements:
-Compute an index based on the given key.
-Beginning with the calculated index iterate through the hash table until an empty entry is found, or all entries are occupied.
-Initialize the found entry with the key and the data.
-Return SUCCESS if an empty entry was found, or ERROR otherwise.
-*/
-
-
-
 
 

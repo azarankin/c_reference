@@ -175,6 +175,7 @@ Free the memory allocated for a contact object, pointed to by the given pointer.
 void DestroyContact(contact_type* contact) {
     if (contact != NULL) {
         free(contact);
+        //contact = NULL;
     }
 }
 

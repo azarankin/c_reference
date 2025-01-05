@@ -93,7 +93,7 @@ You can only use a single temporary int variable
 void ShiftLeft(int array[], size_t size)
 {
     int j = 0;
-    for (; j < size - 1; ++j) {
+    for (j = 0; j < size - 1; ++j) {
         array[j] = array[j + 1];
     }
 }

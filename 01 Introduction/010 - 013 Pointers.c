@@ -69,8 +69,8 @@ void FindMinMax(const int array[], int size, int* min, int* max)
     
     for(i=1;i<size;++i)
     {
-    if(array[i]<local_min) local_min=array[i];
-    if(array[i]>local_max) local_max=array[i];
+        if(array[i]<local_min) local_min=array[i];
+        else if(array[i]>local_max) local_max=array[i];
     }
     
     *min = local_min;

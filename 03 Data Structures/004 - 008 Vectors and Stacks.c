@@ -120,6 +120,7 @@ void VectorDestruct(vector_type* vector)
 
     if (vector->array != NULL) {
         free(vector->array);
+        //vector->array = NULL;
     }
 
 }

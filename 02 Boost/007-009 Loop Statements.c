@@ -59,9 +59,9 @@ unsigned Fibonacci2(unsigned n)
     
     for(i=2;i<=n;++i)
     {
-        temp = prev;
+        temp = prev + temp;
         prev = current;
-        current += temp;
+        current = temp;
     }
     
     return current;
