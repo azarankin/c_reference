@@ -73,7 +73,7 @@ void Sort(int* array, size_t size)
         size_t min_idx = i;
 
         for (j = i + 1; j < size; j++)
-        {
+        { 
             if (array[j] < array[min_idx])
                 min_idx = j;
         }

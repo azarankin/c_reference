@@ -78,7 +78,7 @@ const hash_data_type* HashFind(const hash_type* hash, const char* key);
 //function
 
 
-#define SEPARATE_CHAINING
+#define SEPARATE_CHAINING //!
 #include "hash.h"
 
 typedef struct

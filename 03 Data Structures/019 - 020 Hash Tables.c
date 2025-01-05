@@ -86,16 +86,6 @@ status_type HashInsert(hash_type* hash, const char* key, int data) {
 }
 
 
-/*
-Exercise 18: HashFind-OA
-
-Requirements:
-Compute an index based on the given key.
-Iterate through the hash table starting with the calculated index until the required key is found.
-Stop the iteration if an empty entry is found or all entries have been visited.
-Return the address of the entry if the key was found, or NULL otherwise.
-*/
-
 
 
 
