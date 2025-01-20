@@ -87,7 +87,7 @@ typedef struct
     hash_data_type data;
 } hash_node_type;
 
-/* ### Write your code below this line ### */
+
 
 
 status_type HashInsert(hash_type* hash, const char* key, int data) {

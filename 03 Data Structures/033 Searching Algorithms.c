@@ -43,7 +43,7 @@ status_type Search(const int* array, size_t size, int data, size_t* index);
 #include "search.h"
 
 
-/* ### Write your code below this line ### */
+
 
 /**
 * Helper function that performs binary search recursively

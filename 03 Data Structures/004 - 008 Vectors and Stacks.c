@@ -77,7 +77,7 @@ int VectorPop(vector_type* vector);
 #include <stdlib.h> /* malloc, free */
 #include "vector.h"
 
-/* ### Write your code below this line ### */
+
 
 /* Initialize a given vector_type struct and allocate an int array of 'capacity' length. */
 status_type VectorConstruct(vector_type* vector, size_t capacity)

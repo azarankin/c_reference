@@ -145,7 +145,7 @@ void DestroyContact(contact_type* contact);
 
 contact_type* CreateContact(const char* name, unsigned tel_num)
 {
-    /* ### Write your code below this line ### */
+    
     
     contact_type* new_contact = (contact_type*)malloc(sizeof(contact_type));
 

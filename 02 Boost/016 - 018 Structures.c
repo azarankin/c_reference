@@ -33,7 +33,7 @@ struct Point
     int x, y;
 };
 
-/* ### Write your code below this line ### */
+
 
 
 float Distance(struct Point a, struct Point b)
@@ -65,7 +65,7 @@ struct Person
     unsigned tel_num;
 };
 
-/* ### Write your code below this line ### */
+
 int IsLess(const struct Person* p1, const struct Person* p2)
 {
     return (p1 -> id_num < p2 -> id_num); /*? 1 : 0*/

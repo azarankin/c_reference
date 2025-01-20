@@ -25,7 +25,6 @@ Implement a function that is given one (signed) integer, and it should return it
 For example, the absolute value of -17 is 17, while the absolute value of 97 is 97.
 */
 
-/* ### Write your code below this line ### */
 int AbsoluteValue(int value)
 {
     return (value < 0) ? (-1 * value) : value;
@@ -57,7 +56,6 @@ float AddVat(float price, int category)
 {
     float total_price = 0;
 
-    /* ### Write your code below this line ### */
 
     switch (category)
     {

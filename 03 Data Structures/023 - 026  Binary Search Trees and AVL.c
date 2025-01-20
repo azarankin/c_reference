@@ -94,7 +94,7 @@ static bst_node_type* Balance(bst_node_type* node, int key)
     return node;
 }
 
-/* ### Write your code below this line ### */
+
 
 
 status_type BstInsert(bst_type* bst, int key, int data) {

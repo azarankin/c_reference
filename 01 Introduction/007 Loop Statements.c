@@ -2,7 +2,7 @@
 In this chapter, you will learn and practice additional statements. This time, about statements that involve loops.
 
 Study:
-💥 Loop Statements
+ Loop Statements
 See also: The for (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-for-Statement), while(https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-while-Statement) and do(https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-do-Statement) statements.
 
 Emphasize:
@@ -23,7 +23,6 @@ Read about the Modulo (https://en.wikipedia.org/wiki/Modulo) Operator.
 
 int RangeSum(int start, int end)
 {
-    /* ### Write your code below this line ### */
     int i, sum = 0;
 
     i = start;

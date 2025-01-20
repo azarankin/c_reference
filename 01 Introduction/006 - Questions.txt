@@ -3,7 +3,7 @@ You have completed the exercises of the chapter. As a next step, and before movi
 
 1. A digital thermostat is set to activate an air conditioner when the room temperature is 24 degrees or higher. Which comparison operator should be used?
 int room_temp = ReadRoomTemperature();
-if (room_temp ❓ 24) {
+if (room_temp ? 24) {
     ActivateTheAirConditioner();
 }
 [] !=

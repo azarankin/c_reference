@@ -2,7 +2,7 @@
 In this chapter, you will learn and practice how to deal with pointers in C.
 
 Study:
-💥 Pointers
+ Pointers
 See also: Declaring Pointers (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Declaring-Pointers),
 and Initializing Pointers (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Initializing-Pointers).
 
@@ -37,9 +37,6 @@ int Divide(int numerator, int denominator, int* quotient, int* remainder)
     }
 
 
-
-    /* ### Write your code below this line ### */
-
     *quotient = numerator / denominator;
     *remainder = numerator % denominator;
 
@@ -63,7 +60,6 @@ Implement the function FindMinMax, which is given four parameters: an array of i
 
 void FindMinMax(const int array[], int size, int* min, int* max)
 {
-    /* ### Write your code below this line ### */
     int local_min=0, local_max=0, i=0;
 	local_min = local_max = array[0];
     
@@ -88,7 +84,6 @@ The function should find all the odd numbers and sequentially store them in the 
 
 int CopySelected(const int array[], int size, int odd_numbers[])
 {
-    /* ### Write your code below this line ### */
 	int odd_number_counter = 0, i = 0;
 
     for(i=0;i<size;++i)

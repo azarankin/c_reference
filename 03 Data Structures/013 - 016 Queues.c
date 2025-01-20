@@ -51,7 +51,7 @@ Initialize the Queue's control struct by initializing the Linked List contained 
 
 
 
-/* ### Write your code below this line ### */
+
 
 void QueueConstruct(queue_type* queue) {
     ListConstruct(&queue->list);

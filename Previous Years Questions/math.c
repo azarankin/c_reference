@@ -23,6 +23,19 @@ int isFirst(int x){ //x>2
 }
 
 
+int isFirstFaster(int x){ //x>2
+    auto int i;
+    if(x==0||x==1)
+        return 0;
+    if(x==2)
+        return 1;
+    for(i=2; i * i <= x; i++) // i <= sqrt(x)
+        if(x%i==0)
+            return 0;
+    return 1;
+}
+
+
 //	Firt numbers till n
 int firstNumberCount(int n){
     auto int count = 0;

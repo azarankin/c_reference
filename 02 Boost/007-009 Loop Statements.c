@@ -2,7 +2,7 @@
 In this chapter, you will learn and practice additional statements. This time, about statements that involve loops.
 
 Study:
-💥 Loop Statements
+ Loop Statements
 See also: The for (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-for-Statement), while(https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-while-Statement) and do(https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-do-Statement) statements.
 
 Emphasize:
@@ -21,7 +21,6 @@ Constraints:
 Please don't use the recursion method - Only use an iterative loop.
 */
 
-/* ### Write your code below this line ### */
 unsigned Fibonacci(unsigned n)
 {   
     unsigned current = 0;
@@ -80,8 +79,6 @@ What are the advantages?
 What are the limitations?
 */
 
-
-/* ### Write your code below this line ### */
 typedef unsigned long ulong_t;
 int IsPrimeNumber(ulong_t number) //1 is true 0 is false
 {

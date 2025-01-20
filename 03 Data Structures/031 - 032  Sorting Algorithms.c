@@ -34,7 +34,7 @@ void Sort(int* array, size_t size);
     *b = temp;
 }
 
-/* ### Write your code below this line ### */
+
 
 /* Bubble sort */
 void Sort(int* array, size_t size)

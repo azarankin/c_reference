@@ -2,7 +2,7 @@
 In this chapter, you will learn and practice how to deal with arrays of elements of specific types.
 
 Study:
-💥 Arrays
+ Arrays
 See also Arrays (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Arrays). (GNU C reference manual)
 
 Emphasize:
@@ -28,7 +28,6 @@ int annual_rainfalls[100];
 
 void SetAnnualRainfall(int year, int rainfall_in_mm)
 {
-    /* ### Write your code below this line ### */
     annual_rainfalls[year-1970] = rainfall_in_mm;
 }
 
@@ -55,8 +54,6 @@ void SetAnnualRainfall(int year, int rainfall_in_mm)
 int RainfallAverage(int num_years)
 {
     int i, sum = 0;
-
-    /* ### Write your code below this line ### */
 
     for (i = 0; i < num_years; ++i) 
     {

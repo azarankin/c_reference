@@ -4,11 +4,11 @@ Please note: One major fundamental concept on which this 💥 tutorial is based,
 In this chapter, you will learn about and practice data types, variables, expressions and functions.
 
 Study:
-💥 Data types and Variables
+ Data types and Variables
 See also: integer (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Integer-Types) and real number (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Real-Number-Types) types.
-💥 Operators and Expressions
+ Operators and Expressions
 See also: assignment (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Assignment-Operators) and arithmetic (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Arithmetic-Operators) operators.
-💥 Functions
+ Functions
 See also: Functions (https://en.wikipedia.org/wiki/Function_(computer_programming))
 
 Emphasize:
@@ -49,7 +49,6 @@ unsigned BoxSurfaceArea(unsigned length, unsigned width, unsigned height)
     /* This is an 'unsigned int' type local variable, initialized to 0 */
     unsigned area = 0;
 
-    /* ### Write your code below this line ### */
 	unsigned l = length, w = width, h = height;
     area = (l*w + w*h + h*l) * 2;
     
@@ -90,23 +89,6 @@ Study:
 Modulo Operato (https://en.wikipedia.org/wiki/Modulo)
 */
 
-unsigned ReverseNumber(unsigned number)
-{
-    unsigned ones_digit, tens_digit, hundreds_digit, result;
-
-    /* ### Write your code below this line ### */
-    hundreds_digit = number / 100;
-    tens_digit = (number - hundreds_digit * 100 )/ 10; /*(number / 10) % 10*/
-	ones_digit = number - hundreds_digit * 100 - tens_digit *10; /*number % 10*/
-    result = ones_digit * 100 + tens_digit * 10 + hundreds_digit;
-    
-    
-    result = ones_digit * 100 + tens_digit * 10 + hundreds_digit;
-
-    return result;
-}
-
-
 unsigned ReverseNumber_suggested(unsigned number)
 {
     unsigned ones_digit, tens_digit, hundreds_digit;
@@ -119,3 +101,23 @@ unsigned ReverseNumber_suggested(unsigned number)
 
     return ones_digit * 100 + tens_digit * 10 + hundreds_digit;
 }
+
+
+
+
+
+unsigned ReverseNumber(unsigned number)
+{
+    unsigned ones_digit, tens_digit, hundreds_digit, result;
+    
+    hundreds_digit = number / 100;
+    tens_digit = (number - hundreds_digit * 100 )/ 10; /*(number / 10) % 10*/
+	ones_digit = number - hundreds_digit * 100 - tens_digit *10; /*number % 10*/
+    result = ones_digit * 100 + tens_digit * 10 + hundreds_digit;
+    
+    
+    result = ones_digit * 100 + tens_digit * 10 + hundreds_digit;
+
+    return result;
+}
+

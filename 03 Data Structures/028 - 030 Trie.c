@@ -65,7 +65,7 @@ static trie_node_type* Crawl(trie_node_type* node, const char** word)
 static trie_node_type* InsertHelper(trie_node_type* node, const char* word)
 */
 
-/* ### Write your code below this line ### */
+
 
 #include "status.h"
 #include <stdlib.h>

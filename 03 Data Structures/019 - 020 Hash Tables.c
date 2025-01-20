@@ -89,7 +89,7 @@ status_type HashInsert(hash_type* hash, const char* key, int data) {
 
 
 
-/* ### Write your code below this line ### */
+
 
 
 const hash_data_type* HashFind(const hash_type* hash, const char* key) {

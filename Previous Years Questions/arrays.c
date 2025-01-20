@@ -1,7 +1,7 @@
  #include <stdio.h>
 
  //	Array swop, begin to end [1, 2, 3] to [3, 2, 1]
-void arrSwop(int arr[], int arrLength){
+void arrSwap(int arr[], int arrLength){
     auto int i;
     auto int tmp;
 
@@ -31,9 +31,9 @@ int biggest3(int arr[], int arrLength){
 
     for (i=0; i< arrLength; i++){
         //if(arr[i]<b3) continue;
-        if(arr[i]<=b2 && arr[i]>b3) b3=arr[i];
-        else if(arr[i]<=b1 && arr[i]>b2) {b3=b2; b2=arr[i];}
-        else if(arr[i]>=b1) {b3=b2; b2=b1; b1=arr[i];}
+        if(arr[i]>=b1) {b3=b2; b2=b1; b1=arr[i];}
+        else if(/*arr[i]<=b1 &&*/ arr[i]>b2) {b3=b2; b2=arr[i];}
+        else if(/*arr[i]<=b2 &&*/ arr[i]>b3) b3=arr[i];    
         }
     return b3;
 }
@@ -138,7 +138,7 @@ void mergeArraySort(int merge[], int arr1[], int length1, int arr2[], int length
 }
 
 
-void swop(int* a, int* b)
+void swap(int* a, int* b)
 {
     int tmp = *a;
     *a = *b;
@@ -146,7 +146,7 @@ void swop(int* a, int* b)
 }
 
 
-void swop(int* a, int* b)
+void swap(int* a, int* b)
 {
     int tmp = *a;
     *a = *b;
@@ -161,7 +161,7 @@ void bubleSortArray(int arr[], int arrLength){
     for(i=0; i<arrLength; ++i )
         for(int j=i+1; j<arrLength; ++j )
             if(arr[i]>arr[j]){//swop values inside array for buble sort
-                swop(&arr[i], &arr[j]);
+                swap(&arr[i], &arr[j]);
                 //int tmp=arr[i];
                 //arr[i]=arr[j];
                 //arr[j]=tmp;
@@ -170,7 +170,7 @@ void bubleSortArray(int arr[], int arrLength){
 
 
 
-void swop_ptr(int** a, int** b)
+void swap_ptr(int** a, int** b)
 {
     int* tmp = *a;
     *a = *b;

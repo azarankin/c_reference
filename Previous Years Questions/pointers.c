@@ -7,7 +7,7 @@ int pointerEqual(int *a, int *b){
 
 
 // Swop between to int pointers
-void swopPointer(int *x, int *y){
+void swapPointer(int *x, int *y){
     int tmp=*x;
     *x=*y;
     *y=tmp;
@@ -15,17 +15,17 @@ void swopPointer(int *x, int *y){
 
 
 
-void swopPointer_without_tmp(int *x, int *y){
-    *x = *x + *y;  // Step 1
-    *y = *x - *y;  // Step 2
-    *x = *x - *y;  // Step 3
+void swapPointer_without_tmp(int *x, int *y){
+    *x = *x + *y;
+    *y = *x - *y;
+    *x = *x - *y;
 }
 
 
 
-void swopPointer_without_tmp_2(int *x, int *y){
+void swapPointer_without_tmp_2(int *x, int *y){
     //With xor
-    *x = *x ^ *y;  // Step 1
-    *y = *x ^ *y;  // Step 2
-    *x = *x ^ *y;  // Step 3
+    *x = *x ^ *y; 
+    *y = *x ^ *y;
+    *x = *x ^ *y;
 }

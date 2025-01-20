@@ -16,7 +16,7 @@ Constraints:
 The implementation should be based on recursion method.
 */
 
-/* ### Write your code below this line ### */
+
 unsigned Fibonacci(unsigned  index) {
     /* Base cases */
     if (index == 0) {

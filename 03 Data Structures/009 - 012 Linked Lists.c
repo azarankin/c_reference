@@ -89,7 +89,7 @@ list_node_type* ListFind(const list_type* list, list_isequal_type isequal, const
 
 #include "list.h"
 #include <stddef.h>
-/* ### Write your code below this line ### */
+
 
 
 /* Initialize a given list_type struct. */

@@ -2,7 +2,7 @@
 In this chapter, you will learn and practice how to deal with pointers in C.
 
 Study:
-💥 Pointers
+ Pointers
 See also: Declaring Pointers (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Declaring-Pointers),
 and Initializing Pointers (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Initializing-Pointers).
 
@@ -27,7 +27,7 @@ int* i_ptr = &x;
 */
 
 
-/* ### Write your code below this line ### */
+
 int Divide(int numerator, int denominator, int* quotient, int* remainder)
 {
     if(denominator == 0 || quotient == 0 || remainder == 0) return -1;
@@ -65,7 +65,7 @@ StringLength(str2);
 */
 
 
-/* ### Write your code below this line ### */
+
 #include <assert.h>
 #include <stddef.h>
 
@@ -96,7 +96,7 @@ Learn about the ASCII (https://en.wikipedia.org/wiki/ASCII) t
 */
 
 
-/* ### Write your code below this line ### */
+
 #include <assert.h>
 #include <stddef.h>
 int StringCompare(const char* str1, const char* str2) {
@@ -119,7 +119,7 @@ Do not use the Array Subscript Operator ('[ ]'), use the Dereference Operator ('
 Use assert (https://en.wikipedia.org/wiki/Assert.h) to verify that the pointer is not NULL.
 */
 
-/* ### Write your code below this line ### */
+
 
 #include <assert.h>
 #include <stddef.h>

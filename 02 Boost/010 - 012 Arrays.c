@@ -2,7 +2,7 @@
 In this chapter, you will learn and practice how to deal with arrays of elements of specific types.
 
 Study:
-💥 Arrays
+ Arrays
 See also Arrays (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Arrays). (GNU C reference manual)
 
 Emphasize:
@@ -33,7 +33,6 @@ Which header file it is defined in?
 size_t IndexOf(const int array[], size_t size, int element)
 {
     size_t i = 0;
-    /* ### Write your code below this line ### */
     
     for (i=0; i < size; ++i)
     {
@@ -52,8 +51,6 @@ Implement a function that is given an array of integers and the number of items.
 */
 
 
-/* ### Write your code below this line ### */
-
 #include <stddef.h>
 int CalculateAverage(const int array[], size_t size)
 {
@@ -68,7 +65,7 @@ int CalculateAverage(const int array[], size_t size)
     	sum += array[i];
     }
     
-    return (int)((float)sum / (float)size + 0.5);
+    return (int)((float)sum / (float)size + 0.5f);
 }
 
 
@@ -87,12 +84,11 @@ Do not use an auxiliary array
 You can only use a single temporary int variable
 */
 
-/* ### Write your code below this line ### */
 #include <stddef.h>
 
 void ShiftLeft(int array[], size_t size)
 {
-    int j = 0;
+    int j;
     for (j = 0; j < size - 1; ++j) {
         array[j] = array[j + 1];
     }

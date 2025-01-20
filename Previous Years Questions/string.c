@@ -20,7 +20,7 @@ int stringLength(char str[]){
 
 
 // Swop chars
-void swopChar(char *x, char *y){
+void swapChar(char *x, char *y){
     auto char tmp=*x;
     *x=*y;
     *y=*x;
@@ -32,7 +32,7 @@ void stringSwop(char str[]){
     auto int i;
     auto int length=stringLength(str);
     for (i=0; i<=((length-1)/2); i++){
-        swopChar(&str[i], &str[length-i-1]);
+        swapChar(&str[i], &str[length-i-1]);
         //char tmp=str[i];
         //str[i]=str[length-i-1];
         //str[length-i-1]=tmp;

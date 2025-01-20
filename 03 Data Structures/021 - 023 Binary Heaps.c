@@ -77,7 +77,7 @@ static void AdjustHeap(int* array, size_t size, size_t hole, int data)
 
 
 
-/* ### Write your code below this line ### */
+
 
 
 status_type HeapPush(heap_type* heap, int data)

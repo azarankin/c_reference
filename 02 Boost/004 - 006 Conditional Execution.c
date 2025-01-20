@@ -2,7 +2,7 @@
 In this chapter, you will learn about and practice statements that involve comparison and logical operators.
 
 Study:
-💥 Conditional Execution
+ Conditional Execution
 See also: The if Statement (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#The-if-Statement) and Conditional (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Conditional-Expressions) Expressions.
 See also: Comparison (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Comparison-Operators) and Logical (https://www.gnu.org/software/gnu-c-manual/gnu-c-manual.html#Logical-Operators) Operators.
 
@@ -46,7 +46,6 @@ What input values are considered to be an error in this exercise?
 What are the conventional ways for error handling in C?
 */
 
-/* ### Write your code below this line ### */
 int TriangleType(unsigned angle1, unsigned angle2) {
     unsigned angle3;
     int isRight;
@@ -84,7 +83,6 @@ What is wrong with the following expression?
 What is the difference between the if-else statement and the conditional expression?
 */
 
-/* ### Write your code below this line ### */
 int Maximum(int number1, int number2)
 {
     return number1 > number2 ? number1 : number2;
@@ -102,8 +100,6 @@ Study:
 Learn about Static (https://en.wikipedia.org/wiki/Static_(keyword)) Functions and Variables.
 */
 
-
-/* ### Write your code below this line ### */
 int IsRightTriangle(float edge1, float edge2, float edge3)
 {
     float longest_edge, second_edge, third_edge;
@@ -133,7 +129,10 @@ int IsRightTriangle(float edge1, float edge2, float edge3)
 
 
 
-/*suggested*/
+
+
+
+/*suggested option*/
 
 static int IsRight(float a, float b, float c);
 static int IsEqual(float a, float b);
