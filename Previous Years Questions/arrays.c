@@ -63,6 +63,7 @@ void turnLeft(int arr[], int arrLength){
 }
 
 
+
 // Turn array values 3 places left
 void turnLeft3(int arr[], int arrLength){
         for(int i=1;i<=3; i++)
@@ -90,6 +91,37 @@ void turnLeft3_2(int arr[], int arrLength) {
 }
 
 
+
+void turnLeftNTimes(int arr[], int arrLength, int n) {
+    for (int i = 0; i < n; i++) {
+        turnLeft(arr, arrLength);
+    }
+}
+
+#include <stdio.h>
+#include <stdlib.h>
+void turnLeftNTimesOptimized(int arr[], int arrLength, int n) {
+    auto int* temp;
+
+    n = n % arrLength;
+    if (n == 0) return;
+
+    temp = (int*)malloc(n * sizeof(int)); // Dynamically allocate memory
+
+    for (int i = 0; i < n; i++) {
+        temp[i] = arr[i];
+    }
+
+    for (int i = n; i < arrLength; i++) {
+        arr[i - n] = arr[i];
+    }
+
+    for (int i = 0; i < n; i++) {
+        arr[arrLength - n + i] = temp[i];
+    }
+
+    free(temp); // Free the dynamically allocated memory
+}
 
 //	Remove place from the array
 void deleteArr(int arr[], int arrLength, int deletePlace){

@@ -16,6 +16,8 @@ void swapPointer(int *x, int *y){
 
 
 void swapPointer_without_tmp(int *x, int *y){
+    //for the same pointer or the same array place
+    if(x == y) return; //if(*x == *y) return;
     *x = *x + *y;
     *y = *x - *y;
     *x = *x - *y;
