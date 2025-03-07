@@ -15,7 +15,7 @@ void arrSwap(int arr[], int arrLength){
 //	The biggest value in the array
 // Condition, at least 2 elements inside the array!
 int biggest(int arr[], int arrLength){
-    auto int b=arr[0];   //biggest
+    auto int b=arr[0];   /*biggest*/
     auto int i;
     for (i=1;i<arrLength;i++)
         if (b<arr[i]) b=arr[i];
@@ -24,13 +24,15 @@ int biggest(int arr[], int arrLength){
 
 
 //	The biggest 3rd element
-#include <limits.h> // For INT_MIN
+#include <limits.h> /* For INT_MIN */
 int biggest3(int arr[], int arrLength){
-    auto int b1 = INT_MIN, b2 = INT_MIN, b3 = INT_MIN;
+    auto int b1 = INT_MIN;
+    auto int b2 = INT_MIN;
+    auto int b3 = INT_MIN;
     auto int i;
 
     for (i=0; i< arrLength; i++){
-        //if(arr[i]<b3) continue;
+        /*if(arr[i]<b3) continue;*/
         if(arr[i]>=b1) {b3=b2; b2=b1; b1=arr[i];}
         else if(/*arr[i]<=b1 &&*/ arr[i]>b2) {b3=b2; b2=arr[i];}
         else if(/*arr[i]<=b2 &&*/ arr[i]>b3) b3=arr[i];    
@@ -51,7 +53,7 @@ void maina(){
 
 // Turn array values 1 place left
 void turnLeft(int arr[], int arrLength){
-    auto int first=arr[0];  //first
+    auto int first=arr[0];  /*first*/
     auto int i;
 
     for ( i = 0; i < arrLength - 1; i++) {
@@ -72,19 +74,19 @@ void turnLeft3(int arr[], int arrLength){
 
 
 void turnLeft3_2(int arr[], int arrLength) {
-    // Store the first 3 elements
+    /* Store the first 3 elements*/
     auto int first1 = arr[0];
     auto int first2 = arr[1];
     auto int first3 = arr[2];
 
     auto int i;
 
-    // Shift everything left by 3
+    /* Shift everything left by 3*/
     for ( i = 0; i < arrLength - 3; i++) {
         arr[i] = arr[i + 3];
     }
 
-    // Put the saved elements at the end
+    /* Put the saved elements at the end*/
     arr[arrLength - 3] = first1;
     arr[arrLength - 2] = first2;
     arr[arrLength - 1] = first3;
@@ -106,7 +108,7 @@ void turnLeftNTimesOptimized(int arr[], int arrLength, int n) {
     n = n % arrLength;
     if (n == 0) return;
 
-    temp = (int*)malloc(n * sizeof(int)); // Dynamically allocate memory
+    temp = (int*)malloc(n * sizeof(int)); /* Dynamically allocate memory*/
 
     for (int i = 0; i < n; i++) {
         temp[i] = arr[i];
@@ -120,7 +122,7 @@ void turnLeftNTimesOptimized(int arr[], int arrLength, int n) {
         arr[arrLength - n + i] = temp[i];
     }
 
-    free(temp); // Free the dynamically allocated memory
+    free(temp); /* Free the dynamically allocated memory*/
 }
 
 //	Remove place from the array
@@ -138,15 +140,15 @@ void mergeArray(int merge[], int arr1[], int length1, int arr2[], int length2){
     for(int i=0; i<length1; i++)
         merge[i]=arr1[i];
     for(int i=0; i<length2; i++)
-        merge[length1+i]=arr2[i]; // continue merge array after [length1-1]
+        merge[length1+i]=arr2[i]; /*continue merge array after [length1-1]*/
 }
 
 
 
 //	Merge 2 arrays with sorting
-    // The 2 arrays is sorted
+    // The 2 arrays are sorted
 void mergeArraySort(int merge[], int arr1[], int length1, int arr2[], int length2){
-    auto int i, j, m; //array1, array2, merged array counters
+    auto int i, j, m; /*array1, array2, merged array counters*/
     i=j=m=0;
     while (i < length1 && j < length2) {
         if (arr1[i] <= arr2[j]) {
@@ -156,14 +158,14 @@ void mergeArraySort(int merge[], int arr1[], int length1, int arr2[], int length
         }
     }
 
-    //one of the arrays is empty
+    /* one of the arrays is empty*/
 
-    // Copy remaining elements from arr1 (if any)
+    /* Copy remaining elements from arr1 (if any)*/
     while (i < length1) {
         merge[m++] = arr1[i++];
     }
 
-    // Copy remaining elements from arr2 (if any)
+    /* Copy remaining elements from arr2 (if any)*/
     while (j < length2) {
         merge[m++] = arr2[j++];
     }
@@ -192,11 +194,11 @@ void bubleSortArray(int arr[], int arrLength){
     auto int i;
     for(i=0; i<arrLength; ++i )
         for(int j=i+1; j<arrLength; ++j )
-            if(arr[i]>arr[j]){//swop values inside array for buble sort
+            if(arr[i]>arr[j]){/*swop values inside array for buble sort*/
                 swap(&arr[i], &arr[j]);
-                //int tmp=arr[i];
-                //arr[i]=arr[j];
-                //arr[j]=tmp;
+                /*int tmp=arr[i];*/
+                /*arr[i]=arr[j];*/
+                /*arr[j]=tmp;*/
             }
 }
 

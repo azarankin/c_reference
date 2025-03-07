@@ -4,7 +4,7 @@
 // String to pointer
 void pointerStringToArray(char *str, char emptyarr[]){
     auto int i;
-    for (i=0;str[i];i++){   //str[i] != NULL
+    for (i=0;str[i];i++){   /*str[i] != NULL*/
         emptyarr[i]=str[i];
     }
 }
@@ -33,9 +33,9 @@ void stringSwop(char str[]){
     auto int length=stringLength(str);
     for (i=0; i<=((length-1)/2); i++){
         swapChar(&str[i], &str[length-i-1]);
-        //char tmp=str[i];
-        //str[i]=str[length-i-1];
-        //str[length-i-1]=tmp;
+        /*char tmp=str[i];*/
+        /*str[i]=str[length-i-1];*/
+        /*str[length-i-1]=tmp;*/
     }
 }
 
